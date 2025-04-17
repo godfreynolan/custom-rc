@@ -220,10 +220,10 @@ void setup() {
     pinMode(SWITCH_PIN, INPUT_PULLUP);
 
     // Set intended output range for sticks
-    Joystick.setXAxisRange(-127, 127);
-    Joystick.setYAxisRange(-127, 127);
-    Joystick.setRxAxisRange(-127, 127);
-    Joystick.setRyAxisRange(-127, 127);
+    Joystick.setXAxisRange(-JOYSTICK_RANGE, JOYSTICK_RANGE);
+    Joystick.setYAxisRange(-JOYSTICK_RANGE, JOYSTICK_RANGE);
+    Joystick.setRxAxisRange(-JOYSTICK_RANGE, JOYSTICK_RANGE);
+    Joystick.setRyAxisRange(-JOYSTICK_RANGE, JOYSTICK_RANGE);
 
     // Read calibration data. If this is the first time using this code, this 
     // data will be garbage. The sticks won't work properly until they are
